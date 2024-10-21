@@ -16,7 +16,7 @@ We introduce a dataset ``BUTTONInstruct`` comprising 8k data points and demonstr
 ## 📁 Data Format
 
 ``data/button_instruct.jsonl`` is formatted as JSON Lines. Each data point contains a list of messages, and each message is a JSON object with two fields: ``role`` and ``content``.
-```json
+```
 {
     "messages": [{
         "role": "systems",  // system, user, assistant or tool
@@ -70,7 +70,7 @@ Finally, the assistant use ``<final></final>`` to provide a detailed summary of 
 #### tool
 The tool role provides the results of function calls, formatted as a list of JSON objects, each corresponding to a function call from the assistant.
 
-```json
+```
 [
     {
         "name": "function_name", 
